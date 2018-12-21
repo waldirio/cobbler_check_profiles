@@ -12,7 +12,7 @@ update_db()
  
   echo "updating uid: $uid from name: $name"								| tee -a $LOG
   echo "echo \"update rhnksdata set cobbler_id = '$uid' where label = '$name' and org_id='$org'\" | spacewalk-sql -i"	| tee -a $LOG
-#  echo "update rhnksdata set cobbler_id = '$uid' where label = '$name' and org_id='$org'" | spacewalk-sql -i	| tee -a $LOG
+  echo "update rhnksdata set cobbler_id = '$uid' where label = '$name' and org_id='$org'" | spacewalk-sql -i	| tee -a $LOG
 }
 
 check_uid()
